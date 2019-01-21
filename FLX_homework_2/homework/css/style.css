@@ -1,0 +1,148 @@
+@media screen {
+    p::first-letter { /* First letter in each paragraphs */
+        font-size: 30px;
+        color: #76cdd7;
+    }
+    h2.tm-box-bg-title:hover { /* Hover effect */
+        background-color: #31B0D5; 
+        color: #ffffff;
+        font-weight:bold;
+    }
+    #about ul li.box {
+        padding: 0;
+    }
+    nav.tm-main-nav, 
+    .tm-banner, 
+    .tm-content-box, 
+    .carousel-content  { /* Box shaddow */
+        box-shadow: -1px 2px 19px -1px rgba(0,0,0,0.75);
+        
+    }
+    .tm-banner {
+        padding: 0;
+    }
+    .tm-banner-inner {
+        border: 30px solid #f5f5f5;
+    }
+    section::before { /* Pseudoelement (triangle) */
+        content: '';
+        position: absolute;
+        border: 30px solid transparent;
+        border-top: 0px solid transparent;
+        border-left: 150px solid #31B0D5;
+    }
+    #ideas h2.tm-section-title{ /* Color of ‘How We Do It’ to gainsboro and letter spacing - 5px */
+        color:gainsboro;
+        letter-spacing: 5px;
+    }
+    h2 + p { /* First paragraph which placed after h2 tag - italic */
+        font-style: italic;
+    }
+    .tm-content-box.flex-2-col:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    img[alt="epam-mexico"] {
+        width: 100%;
+    }
+    p {
+        text-indent: 15px;
+        line-height: 1.7;
+    }
+    .padding-medium.flex-item.tm-team-description-container.flex-item {
+        max-width: 350px;
+    }
+    .heading a {
+        color: black; /* Link */
+        text-decoration: none;  
+    }
+    .heading a:visited { /* Visited page */
+        text-decoration: underline;
+    }   
+    .heading a:hover { /* Hover style */
+        color: #a9e0e6;
+        text-decoration: underline double;
+        
+    }
+    .heading .text::after { /* New label */ 
+        color: red;
+        content: "New";
+        vertical-align: super;
+        font-size: 10px;
+        
+    }
+    .box {
+        padding: 10px;
+    }
+    .blocks li:nth-child(even) { /* "Headings" block style - gray background*/
+        background-color: #F2F2F2;
+    }
+    .blocks .boxes p::first-letter { /* "Headings" block style - first letter */
+        color: black;
+    }
+    .submit-btn {
+        border: 1px solid #76cdd7;
+        background: 0;
+        color: #76cdd7;
+        border-radius: 0%;
+        float: right;
+        font-size: 1.4em;
+        font-weight: 300;
+        padding: 15px 60px;
+    }
+    .submit-btn:hover{
+        color: white;
+        background-color: #76cdd7; /* Button hover */
+        border-color: transparent;
+    }
+    .mandatory-field::after { /* Asterisk in mandatory field */
+        color:red;
+        content: ' *';
+        display: inline;
+        font-weight: bold;
+    }  
+    .tm-nav-item-link:hover {
+        background-color: #f5f5f5;
+    }
+}
+
+@media print {
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .tm-sidebar{
+        display: none;
+    }
+    .tm-banner {
+        height: 200px;
+        padding: 0px 90px 0 90px;
+    }
+    p:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+    h2 + p {
+        font-style: italic;
+    }
+    h2.tm-section-title {
+        color: #0004ff;
+    }
+    .tm-content-box.flex-2-col:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 75px;
+    }
+    .tm-team-description-container {
+        max-width: 100%;
+    }   
+    img[alt="epam-mexico"] {
+        width: 80%;
+    }
+    #about,
+    section:not(:first-of-type) {
+        display: none;
+    } 
+}
