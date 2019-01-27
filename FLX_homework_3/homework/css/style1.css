@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  background: #FFFFFF; }
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/header_background_v1.jpg) no-repeat top/cover; }
+  header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header section h1 {
+      text-transform: uppercase;
+      margin-top: 17%;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #FFFFFF;
+      text-align: center; }
+    header section .btn-top {
+      color: white;
+      background-color: #01ACAC;
+      padding: 10px 50px;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-decoration-line: none; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .top-wrapper .logo img {
+      width: 220px;
+      height: 140px; }
+    header .top-wrapper nav {
+      margin: 0 0.8em 0 0; }
+      header .top-wrapper nav a {
+        display: inline-block;
+        color: #FFFFFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 22px 114px;
+        font-size: 15px;
+        font-weight: bold;
+        border-right: solid 2px;
+        border-color: #607d8b; }
+        header .top-wrapper nav a:last-child {
+          border: none; }
+  header section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+main {
+  width: 960px;
+  margin: 0 auto; }
+  main h1 {
+    text-align: right;
+    margin-bottom: 0px;
+    text-transform: uppercase; }
+  main .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    height: 35px;
+    margin: 15px; }
+    main .toolbar input {
+      padding-left: 10px;
+      border: 1px solid #607d8b;
+      background: #FFFFFF; }
+  main .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start; }
+    main .post-list h1 {
+      align-self: flex-end;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #000000; }
+    main .post-list article {
+      background-color: #EFEFEF;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 25px;
+      display: flex; }
+      main .post-list article img {
+        width: 280px;
+        height: 280px; }
+      main .post-list article .post {
+        margin: 10px; }
+        main .post-list article .post .post-description {
+          border-bottom: 1px solid #607d8b;
+          padding-bottom: 10px;
+          font-size: 13px;
+          color: #ea0000; }
+        main .post-list article .post h3 {
+          color: #1697A6;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 20px;
+          padding-top: 10px; }
+        main .post-list article .post p {
+          color: #000000; }
+      main .post-list article button {
+        width: 200px;
+        height: 38px;
+        border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+        color: #FFFAEA;
+        background: #01ACAC;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: normal;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer; }
+
+#about {
+  margin: 10px; }
+  #about h1 {
+    color: #000000; }
+  #about p {
+    margin-top: 0px;
+    color: #000000; }
+  #about img {
+    width: 100%;
+    padding: 15px 0; }
+
+.contact-form {
+  color: #000000; }
+  .contact-form h4 {
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0 0 20px; }
+
+form {
+  margin-bottom: 10px; }
+  form label {
+    display: block;
+    color: #000000;
+    text-align: right; }
+  form .input-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    form .input-field input {
+      background: #FFFFFF;
+      height: 45px;
+      border: 1px solid #607d8b; }
+    form .input-field #full_name {
+      width: 472px; }
+    form .input-field #email {
+      width: 472px; }
+  form textarea {
+    height: 120px;
+    width: 955px;
+    margin-bottom: 15px;
+    border: 1px solid #607d8b;
+    background: #FFFFFF; }
+  form button {
+    width: 200px;
+    height: 38px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    color: #FFFAEA;
+    background: #01ACAC;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer; }
+
+footer span {
+  font-size: 13px;
+  margin-left: 15px;
+  color: #000; }
