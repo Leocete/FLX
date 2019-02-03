@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: roboto;
+  background: #0b192f;
+  margin: auto;
+}
+header {
+  background: #162b4d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 74%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.toggle {
+  color: #fff; 
+  display: none;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-right: 40px;
+}
+ul li {
+  padding: 30px 0;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  padding: 30px 20px;
+}
+ul li:hover {
+  background-color: #445570;
+  color: #b8b8b8;
+}
+.logo {
+  color: #fff;
+  text-decoration: none;
+  align-self: center;
+  font-size: 35px;
+  font-weight: 100;
+  padding-left: 20px;
+}
+.logo span {
+  color: pink;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 74%;
+}
+.post-page {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+}
+.post {
+  display: flex;
+  color: #fff;
+}
+.post:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.post:nth-child(odd) {
+  text-align: left;
+}
+.post h2 {
+  font-weight: 100;
+  font-size: 3em;
+}
+.post p {
+  opacity: 0.5;
+  padding: 22px 0;
+  line-height: 1.5;
+}
+.post-pic {
+  width: 50%;
+}
+.post img:hover,
+.post .post-text:hover,
+.post .no-image-post:hover,
+.news:hover {
+  filter: opacity(50%);
+  cursor: pointer;
+}
+.post-text {
+  width: 42%;
+  padding: 30px;
+}
+.post-text h2 {
+  line-height: 1;
+}
+.post-date {
+  width: 8%;
+  text-align: center;
+  padding-top: 10px;
+  opacity: 0.4;
+}
+.post-date span {
+  font-weight: 100;
+  font-size: 25px;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+.post .no-image-post {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  padding: 30px;
+}
+aside {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+
+}
+.news {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.news2 {
+  margin-top: 25px;
+}
+.news-text {
+  padding: 30px;
+}
+.news-text h3 {
+  font-weight: 100;
+  font-size: 30px;
+}
+.news-text p {
+  opacity: 0.5;
+  padding-top: 20px;
+  line-height: 1.5;
+}
+footer {
+  width: 74%;
+  background: #162b4d;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 100;
+  color: #fff;
+  opacity: 0.4;
+  padding: 30px;
+  line-height: 1.5;
+}
+/* Medium screens */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+  header, main, footer {
+    width: 94%;
+  }
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2vw;
+    font-size: 3vw;
+  }
+  .toggle {
+    display: block;
+    margin: 10px auto;
+  }
+  .logo {
+    margin: 20px auto;
+  }
+  nav ul{
+    display: none;
+  }
+  .post-page {
+    width: 60%;
+  }
+  .post-page article,
+  .post-text {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .post:nth-child(odd), 
+  .post:nth-child(even) {
+    flex-direction: column;
+  }
+  .post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: initial;
+  }
+  .post .post-pic, 
+  .post .post-text,
+  .post .post-date {
+    width: 100%;
+  }
+  .post-date {
+    padding: 0 0 20px 0;
+  }
+  aside {
+    width: 38%;
+    font-size: 2vw;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header, main, footer {
+    width: 96%;
+    margin: auto;
+  }
+  main {
+    flex-direction: column;
+  }
+  .post-page, 
+  aside {
+    width: 100%;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2.1em;
+  }
+  footer {
+    font-size: 1.1em;
+  }
+}
