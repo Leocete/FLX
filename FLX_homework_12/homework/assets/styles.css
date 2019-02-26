@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+#emptyList, h2, li {
+  text-align: center;
+}
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+#root {
+  width: 500px; 
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+button {
+  border-radius: 15%;
+}
+#root>ul {
+  display: block;
+}
+#addButton {
+  display: block;
+  margin: 0 auto;
+}
+.checkbox, .delete { 
+  height: 24px;
+  bottom: 0; 
+}
+.checkbox {
+  float: left;
+}
+.delete {
+  float: right;
+}
+ul {
+  margin: 20px 30px 0 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+#toDoEl {
+  width: 50%;
+}
+li {
+  width: 100%;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+}
+label {
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+label:hover {
+  cursor: auto;
+}
+li.checked { 
+  background-color: gray;
+}
+span.button {
+    cursor: pointer;
+}
+#add, #modify {
+  display: none;
+}
